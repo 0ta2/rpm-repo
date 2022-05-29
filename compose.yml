@@ -1,0 +1,8 @@
+services:
+  createrepo:
+    image: centos:centos7
+    tty: true
+    volumes:
+      - type: bind
+        source: ./
+        target: /tmp/rpms
