@@ -1,7 +1,8 @@
 services:
   createrepo:
-    image: centos:centos7
-    tty: true
+    build:
+      context: .
+      dockerfile: ./docker/createrepo/Dockerfile
     volumes:
       - type: bind
         source: ./
